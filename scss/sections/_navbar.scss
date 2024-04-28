@@ -1,0 +1,25 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+@font-face {
+    font-family: shanghai;
+    src: url('../../assets/webfonts/ChineseShangaiDemoVersionRegular-p7Eyy.ttf');
+}
+
+#KZ{
+    font-family: shanghai;
+}
+
+.menu{
+    @include gradient;
+
+    li{
+        padding: 0 0.7rem;
+
+        a{
+            color: $white !important;
+            text-transform: capitalize;
+            font-weight: 600;
+        }
+    }
+}

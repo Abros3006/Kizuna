@@ -1,0 +1,11 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.about{
+    @include gradient3;
+
+    .image-box{
+        width: 500px;
+        height: 500px;
+    }
+}
